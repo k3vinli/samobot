@@ -13,7 +13,7 @@ class SamoBot(discord.Bot):
             self.brainrot_count = {}
         
         if "my_id" in kwargs:
-            self.my_id = kwargs["my_id"]
+            self.my_id = int(kwargs["my_id"])
         else:
             self.my_id = None
 
